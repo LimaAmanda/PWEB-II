@@ -1,18 +1,126 @@
 <h1>Seja bem vindo ao curso de Angular</h1>
+
 <h4 class="text-danger">{{ anuncio }}</h4>
-
-<div class="card" style="width: 18rem">
-  <img [src]="foto" class="card-img-top" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title">{{ nomeProduto | uppercase }}</h5>
-    <span *ngIf="promocao ; else elseBlock" class="badge badge-success">Promoção</span>
-    <ng-template #elseBlock>
-      <span class="badge badge-primary">Aproveite</span>
-    </ng-template>
-    <p class="card-text">Indentificação: {{ idProduto | number : '2.0-0'}} <br>
-      validade: {{datavalidade | date: 'shortDate'}}
-
-    </p>
-    <a href="#" class="btn btn-primary"> {{ precoProduto | currency: 'BRL'}}</a>
+<div class="row">
+  <div class="col">
+    <app-card-produto
+      [foto]="foto"
+      [nomeProduto]="nomeProduto"
+      [promocao]="promocao"
+      [idProduto]="idProduto"
+      [dataValidade]="Validade"
+      [precoProduto]="precoProduto"
+    ></app-card-produto>
   </div>
-</div>
+
+
+   <div class="col">
+    <app-card-produto
+      foto="https://wordpress-network.prod.aws.skyscnr.com/wp-content/uploads/2019/05/london-hero.jpg?w=800&h=312&crop=1"
+      nomeProduto="Viagem a londres poucas vagas disponíveis"
+      [promocao]="false"
+      [idProduto]="04"
+      dataValidade="2021-25-12"
+      [precoProduto]="200.00"
+    ></app-card-produto>
+   </div>
+
+   </div>
+
+   <tr *ngFor="let prod of ListagemProduto"></tr>
+    <tr *ngFor="let prod of ListagemProduto"></tr>
+
+    <td> Passagem Aérea.</td>
+    <td> Código de identificação ID 8.</td>
+    <td> Data de validade 25/12/2021.</td>
+     <td> Valor R$200.00.</td>
+     <td>
+
+  <button class="btn btn-warning">
+     <i class="fa fa-pencil" aria-hidden="true"></i>
+  </button>
+  <button Class= "btn btn-danger ml-2">
+    <i class=" fa fa-trash-o" aria-hidden="true"></i>
+    </button>
+    </td>
+
+    <tr *ngFor="let prod of ListagemProduto"></tr>
+    <tr *ngFor="let prod of ListagemProduto"></tr>
+
+  <td> Hospedagem.</td>
+  <td> Código de identificação ID 9.</td>
+  <td> Data de validade 25/12/2021.</td>
+  <td> Valor R$ 100.00. </td>
+<td>
+
+  <button class="btn btn-warning">
+    <i class="fa fa-pencil" aria-hidden="true"></i>
+ </button>
+ <button Class= "btn btn-danger ml-2">
+   <i class=" fa fa-trash-o" aria-hidden="true"></i>
+   </button>
+   </td>
+
+   <tr *ngFor="let prod of ListagemProduto"></tr>
+    <tr *ngFor="let prod of ListagemProduto"></tr>
+
+   <td> Passeios Diversos.</td>
+  <td> Código de identificação ID 10.</td>
+  <td> Data de validade 25/12/2021.</td>
+  <td> Valor R$ 100.00. </td>
+<td>
+
+  <button class="btn btn-warning">
+    <i class="fa fa-pencil" aria-hidden="true"></i>
+ </button>
+ <button Class= "btn btn-danger ml-2">
+   <i class=" fa fa-trash-o" aria-hidden="true"></i>
+   </button>
+   </td>
+
+   <tr *ngFor="let prod of ListagemProduto"></tr>
+   <tr *ngFor="let prod of ListagemProduto"></tr>
+
+   <td> Instrutor de viagem. </td>
+  <td> Código de identificação ID 11.</td>
+  <td> Data de validade 25/12/2021.</td>
+  <td> Valor R$ 50.33. </td>
+<td>
+
+  <button class="btn btn-warning">
+    <i class="fa fa-pencil" aria-hidden="true"></i>
+ </button>
+ <button Class= "btn btn-danger ml-2">
+   <i class=" fa fa-trash-o" aria-hidden="true"></i>
+   </button>
+   </td>
+
+   <tr *ngFor="let prod of ListagemProduto"></tr>
+   <tr *ngFor="let prod of ListagemProduto"></tr>
+
+   <td> Pontos turisticos. </td>
+  <td> Código de identificação ID 12. </td>
+  <td> Data de validade 25/12/2021.</td>
+  <td> Valor R$ 200.00. </td>
+<td>
+
+  <button class="btn btn-warning">
+    <i class="fa fa-pencil" aria-hidden="true"></i>
+ </button>
+ <button Class= "btn btn-danger ml-2">
+   <i class=" fa fa-trash-o" aria-hidden="true"></i>
+   </button>
+   </td>
+
+
+
+
+
+
+
+
+
+
+
+
+

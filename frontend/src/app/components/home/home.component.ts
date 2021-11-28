@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ListarProdutosComponent } from './../produtos/listar-produtos/listar-produtos.component';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +11,37 @@ import { Component, OnInit } from '@angular/core';
   public nomeProduto: string ="curso de Angular";
   anuncio: string = `O ${this.nomeProduto} está em promoção`;
   idProduto: number = 3;
-  precoProduto: number =2.51;
+  precoProduto: number =2.510;
   promocao: boolean = true;
-  foto:String = 'assets/img/crud.png';
-  datavalidade: string ='2021-12-31';
+  foto:string = 'assets/img/crud.png';
+  Validade: string ='2021-12-31';
+
+  ListagemProduto: string[] =['Terceiro', 'Quarto', 'Quinto'];
+  ListarNumeros: number []= [2000.00,1000.00,50.33,200.00];
+  ListaHome: any =[
+
+    {nome: 'Passagem Aérea', precoProduto: 200.00, validade: '2021-12-25' , id: 8},
+    {nome: 'Hospedagem ', precoProduto: 100.00, validade: '2021-12-25' , id: 9, promocao: true},
+    {id: 10, nome: 'Passeios Diversos' , precoProduto: 100.0, validade: '2021-12-25'},
+    {id: 11, nome: 'Instrutor de viagem' , precoProduto: 50.33, validade: '2021-12-30'},
+    {nome: 'Pontos turisticos ', precoProduto: 200.00, validade: '2021-12-31' , id: 12},
+  ];
+
+  constructor()
+  {
+
+    for (let item of this.ListagemProduto) {
+      console.log(item);
+
+    }
+
+      for (const item of this.ListarNumeros){
+        console.log(item);
+
+      }
 
 
-  constructor() {
+
     //Variáveis de string com concatenação
    // this.anuncio = `o ` + this.nomeProduto + 'está em promoção!'
 

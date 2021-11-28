@@ -1,24 +1,16 @@
 {
-  "posts": [
+  "produtos": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nome": "Curso de Angular",
+      "validade": "2021-12-31",
+      "precoProduto": 550.54
     },
     {
-      "title": "Novo post",
-      "author": "Amanda",
+      "nome": "curso de ionic ",
+      "validade": "2021-11-24",
+      "precoProduto": 250,
       "id": 2
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
