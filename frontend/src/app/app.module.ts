@@ -20,6 +20,8 @@ import { HttpClientModule }from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { AtualizarProdutoComponent } from './components/produtos/atualizar-produto/atualizar-produto.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 registerLocaleData(localePt);
@@ -32,7 +34,8 @@ registerLocaleData(localePt);
     FooterComponent,
     HomeComponent,
     ListarProdutosComponent,
-    CadastrarProdutoComponent
+    CadastrarProdutoComponent,
+    AtualizarProdutoComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,9 @@ registerLocaleData(localePt);
     SharedModule,
     HttpClientModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(), // ToastrModule added
+    ToastrModule.forRoot(), // ToastrModule added,
+    SweetAlert2Module.forRoot(),
+
 
   ],
   providers: [

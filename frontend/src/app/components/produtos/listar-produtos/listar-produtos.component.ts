@@ -13,7 +13,7 @@ export class ListarProdutosComponent implements OnInit {
   listaProdutos: IProduto  [] = [];
 
 
-  constructor( private ProdutosService: ProdutosService) {
+  constructor( private produtosService: ProdutosService) {
 
 }
 
@@ -21,9 +21,20 @@ export class ListarProdutosComponent implements OnInit {
     this.carregarProdutos();
   }
   carregarProdutos() : void{
-    this.ProdutosService.buscarTodos().subscribe(retorno => {
+    this.produtosService.buscarTodos().subscribe(retorno => {
       this.listaProdutos = retorno;
 
   })
 };
+
+ deletar(produto: IProduto) : void{
+    this.produtosService.excluir(produto.id!).subscribe(() => {
+      this.produtosService.exibirMensagem(
+        'Sistema',
+        `${produto.nome} foi excluido com sucesso.}`,
+        'toast-success'
+      );
+      this.carregarProdutos();
+    });
+}
 }

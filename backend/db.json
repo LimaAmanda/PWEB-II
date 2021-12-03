@@ -1,16 +1,16 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Curso de Angular",
-      "validade": "2021-12-31",
-      "precoProduto": 550.54
-    },
-    {
-      "nome": "curso de ionic ",
+      "nome": "curso de ionic II",
       "validade": "2021-11-24",
       "precoProduto": 250,
       "id": 2
+    },
+    {
+      "nome": "Curso de java",
+      "validade": "2021-12-31",
+      "precoProduto": 345,
+      "id": 3
     }
   ]
 }
