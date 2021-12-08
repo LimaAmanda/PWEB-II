@@ -1,16 +1,28 @@
 {
   "produtos": [
     {
-      "nome": "curso de ionic II",
-      "validade": "2021-11-24",
-      "precoProduto": 250,
+      "nome": "Teto Para Dois Capa comum – Edição padrão, 9 setembro 2019",
+      "validade": "2021-12-08",
+      "precoProduto": 37.4,
+      "id": 1
+    },
+    {
+      "nome": "A Troca Capa comum – Edição padrão, 6 novembro 2020",
+      "validade": "2021-12-08",
+      "precoProduto": 32.88,
       "id": 2
     },
     {
-      "nome": "Curso de java",
-      "validade": "2021-12-31",
-      "precoProduto": 345,
+      "nome": "Orgulho e preconceito Capa dura – Edição padrão, 12 abril 2018",
+      "validade": "2021-12-08",
+      "precoProduto": 32.9,
       "id": 3
+    },
+    {
+      "nome": "Coraline - Acompanha marcador de páginas especial Capa dura – Edição padrão, 19 junho 2020",
+      "validade": "2021-12-08",
+      "precoProduto": 29.9,
+      "id": 4
     }
   ]
 }

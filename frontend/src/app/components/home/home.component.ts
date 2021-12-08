@@ -8,23 +8,18 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
   export class HomeComponent implements OnInit {
 
-  public nomeProduto: string ="curso de Angular";
-  anuncio: string = `O ${this.nomeProduto} está em promoção`;
-  idProduto: number = 3;
-  precoProduto: number =2.510;
+  public nomeProduto: string =" Black Friday.";
+  anuncio: string = ` ${this.nomeProduto} Aproveite livros em promoção, com descontos até 50%.`;
+  idProduto: number = 1;
+  precoProduto: number = 20.00;
   promocao: boolean = true;
-  foto:string = 'assets/img/crud.png';
+  foto:string = 'assets/img/Blackfriday.png';
   Validade: string ='2021-12-31';
 
   ListagemProduto: string[] =['Terceiro', 'Quarto', 'Quinto'];
   ListarNumeros: number []= [2000.00,1000.00,50.33,200.00];
   ListaHome: any =[
 
-    {nome: 'Passagem Aérea', precoProduto: 200.00, validade: '2021-12-25' , id: 8},
-    {nome: 'Hospedagem ', precoProduto: 100.00, validade: '2021-12-25' , id: 9, promocao: true},
-    {id: 10, nome: 'Passeios Diversos' , precoProduto: 100.0, validade: '2021-12-25'},
-    {id: 11, nome: 'Instrutor de viagem' , precoProduto: 50.33, validade: '2021-12-30'},
-    {nome: 'Pontos turisticos ', precoProduto: 200.00, validade: '2021-12-31' , id: 12},
   ];
 
   constructor()
