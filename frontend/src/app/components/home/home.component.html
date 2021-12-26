@@ -1,3 +1,4 @@
+
 <h1>Seja bem vindo. </h1>
 
 <h4 class="text-danger">{{ anuncio }}</h4>
@@ -16,7 +17,18 @@
 
    <div class="col">
     <app-card-produto
-      foto="https://www.uerj.br/wp-content/uploads/2019/11/Livros.png "
+      foto="https://www.colgateapp.com/cons/br/epharma/img/desconto.png"
+      nomeProduto=" Descontos Disponíveis."
+      [promocao]="false"
+      [idProduto]="03"
+      dataValidade="2021-12-31"
+      [precoProduto]="20.00"
+    ></app-card-produto>
+   </div>
+
+   <div class="col">
+    <app-card-produto
+      foto="http://www.maisaprendizagem.com.br/wp-content/uploads/2017/07/amor-por-livros.png"
       nomeProduto=" Varios livros Disponíveis ."
       [promocao]="false"
       [idProduto]="03"
@@ -25,16 +37,11 @@
     ></app-card-produto>
    </div>
 
-   <div class="col">
-    <app-card-produto
-      foto="https://andrebona.com.br/wp-content/uploads/2020/10/Como-pedir-descontos-em-suas-compras_-Confira-9-dicas-.png"
-      nomeProduto=" Descontos Disponíveis."
-      [promocao]="false"
-      [idProduto]="03"
-      dataValidade="2021-12-31"
-      [precoProduto]="20.00"
-    ></app-card-produto>
-   </div>
+
+
+
+
+
 
 
 

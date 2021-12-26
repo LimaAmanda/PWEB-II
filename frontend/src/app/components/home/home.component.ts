@@ -8,8 +8,8 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
   export class HomeComponent implements OnInit {
 
-  public nomeProduto: string =" Black Friday.";
-  anuncio: string = ` ${this.nomeProduto} Aproveite livros em promoção, com descontos até 50%.`;
+  public nomeProduto: string =" Super promoção ";
+  anuncio: string = ` ${this.nomeProduto} livros com descontos até 50%.`;
   idProduto: number = 1;
   precoProduto: number = 20.00;
   promocao: boolean = true;

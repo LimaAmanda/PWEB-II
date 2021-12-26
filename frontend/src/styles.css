@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-.table {
- display:table;;
 
+body{
+  background-color: rgb(130, 238, 197)
 }
+.table {
+  display: table;
+}
+
+
