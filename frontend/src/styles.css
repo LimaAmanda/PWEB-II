@@ -1,10 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 
 body{
-  background-color: rgb(130, 238, 197)
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #b9a42f 16.62%, #09b612 85.61%);
 }
-.table {
-  display: table;
+.direitos{
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color:#380a36 ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
+.navbar-text{
+  font-size: 100%;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color:#640645 ;
+}
+.col{
+  font-size: 100%;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color:#640645
+
+}
+.text-danger{
+  font-size: 100%;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color:#4b24a7
+}
+
+
+
 
 

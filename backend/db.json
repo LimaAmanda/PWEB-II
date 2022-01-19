@@ -23,6 +23,12 @@
       "validade": "2021-12-08",
       "precoProduto": 29.9,
       "id": 4
+    },
+    {
+      "nome": "Abc",
+      "validade": "2022-01-19",
+      "precoProduto": 150,
+      "id": 5
     }
   ]
 }
